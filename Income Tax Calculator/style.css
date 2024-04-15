@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+}
+.navbar{
+    background-color: #252538;
+    width: 46vw;
+    height: 2.5rem;
+    position: absolute;
+    left: 27vw;
+    top: 4vh;
+    border-radius: 0.3rem;
+    box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.1);
+    padding: 0.2rem;
+    z-index: 2;
+}
+.head{
+   
+    width: 80%;
+    height: 2.5rem;
+    margin: auto;
+    
+}
+.nav-heading{
+   
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.nav-heading h2{
+    color: #FFFFFF;
+    margin: 0 0.9rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+    
+}
+.form-container{
+    margin-top: 1.8rem;
+    border: 1px solid #98A1C0;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    width: 36vw;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+   
+   
+    
+}
+.form-container form{
+    width: 85%;
+    height: 100%;
+
+    padding-top: 1.8rem;
+    padding-left: 1.4rem;
+    
+
+}
+.form-container form label{
+
+    display: flex;
+    font-size: 0.8rem;
+    color: rgb(32, 32, 32);
+    font-weight: 500;
+}
+
+.question-svg{
+  margin: 0.05rem 0.2rem;
+  cursor: pointer;
+  /* position: relative; */
+ 
+}
+.question-svg-gross{
+    position: relative;
+}
+
+.question-svg-gross:hover::after{
+    position: absolute;
+    content: "Gross annual income is your total salary in a year before any deductions";
+    top: 8.2%;
+    width: 7.5rem;
+    height: 5rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    z-index: 2;
+    white-space: pre-wrap;
+    line-height: 1.25;
+}
+.question-svg-extra{
+    position: relative;
+}
+.question-svg-extra:hover::after{
+    position: absolute;
+    content: "Extra income is your income other than annual income";
+    /* top: 19%; */
+    width: 7.5rem;
+    height: 3.2rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    z-index: 2;
+    /* white-space: pre-wrap; */
+    line-height: 1.25;
+}
+.question-svg-age{
+    position: relative;
+}
+.question-svg-age:hover::after{
+    position: absolute;
+    content: "Select your current age ";
+    top: 30%;
+    width: 5.5rem;
+    height: 2.2rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    z-index: 2;
+    white-space: pre-wrap;
+    line-height: 1.25;
+}
+.question-svg-deductions{
+    position: relative;
+}
+.question-svg-deductions:hover::after{
+    position: absolute;
+    content: "Total sum of deductions like basic deductions, loans, donations, etc. ";
+    top: 30%;
+    width: 8.5rem;
+    height: 4.5rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    z-index: 2;
+    white-space: pre-wrap;
+    line-height: 1.25;
+}
+
+
+
+input, .select-container{
+   width: 100%;
+    height: 2.1rem;
+    
+    position: relative;
+    /* bottom: 1.2rem; */
+    padding-left: 0.4rem;
+    border: 1px solid #98A1C0;
+    border-radius: 0.2rem;
+
+}
+
+.drop-down-icon{
+  position: absolute;
+  right: 0.3rem;
+  cursor: pointer;
+ 
+}
+.select-container{
+    display: flex;
+    align-items: center;
+    border: none;
+    bottom: 1.2rem;
+    width: 90%;
+    position: relative;
+   
+}
+.age-info{
+    position: absolute;
+    right: -1.5rem;
+   
+    display: block;
+    display: none;
+    cursor: pointer;
+    /* display: flex; */
+
+}
+.age-info-content{
+    width: 6rem;
+    height: 2.5rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    font-size: 0.8rem;
+    margin: 0.3rem 0.2rem;
+    display: none;
+ 
+    
+    
+}
+.age-info:hover .age-info-content{
+    display: block;
+}
+.age-info:hover {
+ 
+    right: -7.9rem;
+    bottom: -1.5rem;
+    
+}
+.select-box{
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    height: 2.1rem;
+    font-size: 600;
+    cursor: pointer;
+    padding: 0.2rem 0.3rem;
+    border: 1px solid #98A1C0;
+    border-radius: 0.2rem;
+    color: rgb(68, 68, 116);
+
+}
+
+
+  
+.age-options{
+    color: rgb(68, 68, 116);
+    font-size: 0.8rem;
+    opacity: 0.6;
+    
+    
+   
+}
+
+input::placeholder{
+    
+    color: rgb(68, 68, 116);
+    font-size: 0.8rem;
+    opacity: 0.6;
+   
+
+}
+input:focus{
+    outline: none;
+}
+.gross-container{
+    display: flex;
+    width: 90%;
+
+    height: 2.1rem;
+    padding: 0;
+    margin: 0;
+    bottom: 1.2rem;
+    position: relative;
+    
+}
+.gross-info-annual, .gross-info-extra, .gross-info-deductions, #gross-info-annual-limit{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    display: none;
+    cursor: pointer;
+    
+
+}
+
+
+.gross-info-annual:hover::after, .gross-info-extra:hover::after, .gross-info-deductions:hover::after{
+    position: absolute;
+    content: "Please enter a positive number only";
+    width: 10.5rem;
+    height: 2.1rem;
+    padding: 0.2rem 0.3rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.5rem;
+    margin-left: 1.1rem;
+}
+#gross-info-annual-limit:hover::after{
+    position: absolute;
+    content: "Income should be less than 100 crore";
+    width: 10.5rem;
+    height: 2.1rem;
+    padding: 0.2rem 0.3rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.5rem;
+    margin-left: 1.1rem;
+}
+.gross-content{
+  
+    width: 10.5rem;
+    height: 1.3rem;
+    padding: 0.1rem 0.2rem;
+    color: white;
+    background-color: rgb(66, 82, 94);
+    border-radius: 0.1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1.3rem;
+    left: -0.2rem;
+    z-index: 2554555;
+   
+}
+
+
+.extra-info-svg{
+    position: absolute;
+   margin-left: -1.5rem;
+   margin-top: -0.6rem;
+}
+.deductions-info-svg{
+    position: absolute;
+   margin-left: -1.5rem;
+   margin-top: -0.6rem;
+}
+/* 
+.age-input{
+   
+   cursor: pointer;
+   background-color: #fff;
+  
+
+  
+} */
+
+
+.btn-submit{
+    background-color: #4E4BF3;
+    width: 90%;
+    height: 2.2rem;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.preview{
+    position: absolute;
+    width: 40vw;
+    top: 30%;
+    left: 30%;
+    height: 50vh;
+    z-index: 65252;
+    border: 1px solid #98A1C0;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.preview h2{
+    color: #252538;
+    font-size: 1.8rem;
+    font-weight:500;
+    margin: 0.3rem auto;
+}
+.preview h3{
+    color: #252538;
+    font-size: 1.4rem;
+    font-weight:500;
+    margin: 0.3rem auto;
+}
+.preview h4{
+    color:#252538;
+    font-size: 0.9rem;
+    font-weight:500;
+    margin: 0.3rem auto;
+}
+.close-btn{
+    /* display: block; */
+    
+    background-color: #4E4BF3;
+    width: 16%;
+    height: 2.2rem;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin: 1.8rem auto;
+    margin-bottom: 0.8rem;
+    box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.1);
+}
+

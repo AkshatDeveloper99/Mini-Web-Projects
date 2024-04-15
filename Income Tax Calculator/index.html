@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <title>Income Tax Calculator</title>
+</head>
+
+<body>
+  <div class="bodyContainer">
+    <nav class="navbar flex">
+      <div class="head">
+        <div class=" nav-heading">
+          <h2>
+            Income Tax Calculator
+          </h2>
+          <img src="/assets/svgImages/calculator.svg" height="30" alt="">
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="form-container">
+        <form action="" id="myForm">
+
+          <label for="name">Enter gross annual income
+            <div class="question-svg question-svg-gross">
+              <img src="/assets/svgImages/question-icon.svg" height="14" alt="">
+            </div>
+          </label><br>
+
+          <!-- <input type="text" id="gross-annual" placeholder="Enter gross annual income"> -->
+
+          <div class="gross-container">
+            <input type="text" id="gross-annual"  placeholder="Enter gross annual income">
+            <div class="gross-info-annual" id="gross-info-annual">
+              <img class="gross-info-svg" src="/assets/svgImages/info.svg" height="18" alt="">
+            </div>
+            <div class="gross-info-annual" id="gross-info-annual-limit">
+              <img class="gross-info-svg" src="/assets/svgImages/info.svg" height="18" alt="">
+            </div>
+          </div>
+
+
+          <label for="name">Enter extra income
+            <div class="question-svg question-svg-extra">
+              <img src="/assets/svgImages/question-icon.svg" height="14" alt="">
+            </div>
+          </label><br>
+
+          <div class="gross-container">
+            <input type="text" id="extra-income" placeholder="Enter extra income from other sources">
+            <div class="gross-info-extra" id="gross-info-extra">
+              <img class="gross-info-svg" src="/assets/svgImages/info.svg" height="18" alt="">
+
+            </div>
+          </div>
+
+
+        
+ <label for="name">Enter age group
+            <div class="question-svg question-svg-age">
+              <img src="/assets/svgImages/question-icon.svg" height="14" alt="">
+            </div>
+          </label><br>
+
+
+
+
+          <div class="select-container">
+            <select id="age" class="select-box">
+              <option class="age-options">Select An Option</option>
+              <option class="age-options" value="low">Below 40</option>
+              <option class="age-options" value="mid">From 40 to 60</option>
+              <option class="age-options" value="high">Above 60</option>
+            </select>
+            <img class="drop-down-icon" src="/assets/svgImages/dropDown.svg" height="22" alt="">
+            <div class="age-info" id="age-info">
+              <img id="age-info" src="/assets/svgImages/info.svg" height="18" alt="">
+              <div class="age-info-content">
+                Input field is mandatory
+              </div>
+            </div>
+            
+          </div>
+          
+
+          <label for="name">Enter total applicable deductions
+            <div class="question-svg question-svg-deductions">
+              <img src="/assets/svgImages/question-icon.svg" height="14" alt="">
+            </div>
+          </label><br>
+
+          <div class="gross-container">
+            <input type="text" id="deductions" placeholder="Add total applicable deductions">
+            <div class="gross-info-deductions" id="gross-info-deductions">
+              <img class="gross-info-svg" src="/assets/svgImages/info.svg" height="18" alt="">
+
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="preview" id="preview">
+      <h2>
+        Your overall income will be
+      </h2>
+      <h3 id="calculated-tax">
+        00000
+      </h3>
+      <h4>
+        after tax deductions
+      </h4>
+      <button type="button" class="close-btn" id="close-btn">Close</button>
+    </div>
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>
